@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nathalie & Sébastien</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Background music (optional) -->
+<audio id="bg-music" src="music.mp3" loop></audio>
+
+<!-- SLIDE 1 – HERO -->
+<section class="slide active" style="background-image:url('photo1.jpg')">
+  <div class="content">
+    <h1>Nathalie & Sébastien</h1>
+    <p class="subtitle">A French Love Story</p>
+    <button onclick="start()">Start</button>
+  </div>
+</section>
+
+<!-- SLIDE 2 – INVITATION TEXT 1 -->
+<section class="slide" style="background-image:url('photo2.jpg')">
+  <div class="content">
+    <p class="text">
+      Priceless moments in life are meant to be celebrated in the presence of the ones you love.
+    </p>
+    <button onclick="next()">Next</button>
+  </div>
+</section>
+
+<!-- SLIDE 3 – INVITATION TEXT 2 -->
+<section class="slide" style="background-image:url('photo3.jpg')">
+  <div class="content">
+    <p class="text">
+      We are pleased to invite you to our wedding ceremony and reception.
+    </p>
+    <button onclick="next()">Next</button>
+  </div>
+</section>
+
+<!-- SLIDE 4 – WEDDING DETAILS -->
+<section class="slide" style="background-image:url('photo4.jpg')">
+  <div class="content">
+    <h2>The Wedding</h2>
+    <p>
+      Saturday, June 14, 2026<br>
+      Ceremony at 3:30 PM<br><br>
+      Château de Provence<br>
+      <a href="https://maps.google.com" target="_blank">View Map</a>
+    </p>
+    <button onclick="next()">RSVP</button>
+  </div>
+</section>
+
+<!-- SLIDE 5 – RSVP -->
+<section class="slide" style="background-image:url('photo1.jpg')">
+  <div class="content">
+    <h2>RSVP</h2>
+    <a class="rsvp" href="https://forms.gle/YOUR_GOOGLE_FORM" target="_blank">
+      Respond Here
+    </a>
+    <button onclick="next()">Next</button>
+  </div>
+</section>
+
+<!-- SLIDE 6 – ENDING -->
+<section class="slide" style="background-image:url('photo2.jpg')">
+  <div class="content">
+    <p class="text">
+      And they lived happily ever after.
+    </p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
