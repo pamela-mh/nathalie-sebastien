@@ -27,6 +27,7 @@ html, body {
   z-index: 1;
 }
 
+/* Card / photo layout */
 .card {
   width: 80%;
   max-width: 520px;
@@ -38,6 +39,7 @@ html, body {
   border-radius: 4px;
 }
 
+/* Text overlay on photo */
 .overlay {
   position: absolute;
   inset: 0;
@@ -45,27 +47,14 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
   text-align: center;
+  color: white;
   padding: 40px;
-}
-
-h1 {
-  font-size: 2.8rem;
-}
-
-.subtitle {
-  margin-top: 10px;
-  font-style: italic;
-}
-
-.text {
-  font-size: 1.6rem;
-  line-height: 1.6;
+  pointer-events: none; /* allow button clicks */
 }
 
 button {
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 10px 32px;
   background: #c6b27c;
   border: none;
@@ -73,8 +62,27 @@ button {
   color: white;
   font-size: 1rem;
   cursor: pointer;
+  position: relative;
+  z-index: 2;
+  pointer-events: auto; /* make button clickable */
 }
 
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+/* Details card (slide 4 & 5) */
 .details-card {
   width: 80%;
   max-width: 520px;
@@ -97,4 +105,5 @@ input, textarea {
   margin: 10px 0;
   padding: 10px;
   font-family: inherit;
+  font-size: 1rem;
 }
