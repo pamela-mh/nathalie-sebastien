@@ -39,6 +39,8 @@ html, body {
 
 .card img {
   width: 100%;
+  max-height: 400px; /* reduced height so button fits */
+  object-fit: cover;
   border-radius: 4px;
 }
 
@@ -96,6 +98,8 @@ h1 {
 
 .details-card img {
   width: 100%;
+  max-height: 300px; /* reduce height for cards */
+  object-fit: cover;
   margin-bottom: 20px;
   border-radius: 4px;
 }
