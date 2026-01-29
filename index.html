@@ -10,6 +10,9 @@
 </head>
 <body>
 
+<!-- Background music -->
+<audio id="bg-music" src="music.mp3" autoplay loop></audio>
+
 <!-- SLIDE 1 — HERO -->
 <section class="slide active">
   <div class="card">
@@ -22,51 +25,50 @@
   </div>
 </section>
 
-<!-- SLIDE 2 — INVITATION TEXT -->
+<!-- SLIDE 2 — INVITATION TEXT MERGED -->
 <section class="slide">
   <div class="card">
     <img src="photo2.jpg" alt="">
     <div class="overlay">
       <p class="text">
-        Priceless moments in life are meant to be celebrated in the presence of the ones you love.
+        Priceless moments in life are meant to be celebrated in the presence of the ones you love,  
+        which is why we are pleased to invite you to our wedding ceremony and reception.
       </p>
     </div>
     <button class="slide-btn" onclick="next()">Next</button>
   </div>
 </section>
 
-<!-- SLIDE 3 — INVITATION CONTINUATION -->
-<section class="slide">
-  <div class="card">
-    <img src="photo2.jpg" alt="">
-    <div class="overlay">
-      <p class="text">
-        We are pleased to invite you to our wedding ceremony and reception.
-      </p>
-    </div>
-    <button class="slide-btn" onclick="next()">Next</button>
-  </div>
-</section>
-
-<!-- SLIDE 4 — WEDDING DETAILS -->
+<!-- SLIDE 3 — WHEN + Calendar -->
 <section class="slide">
   <div class="card details-card">
     <h2>When</h2>
     <img src="calendar.jpg" alt="July 19">
-
-    <h2>Where</h2>
-    <a href="https://maps.google.com" target="_blank">
-      <img src="map.jpg" alt="Map location">
-    </a>
-
-    <h2>Timeline</h2>
-    <img src="timeline.jpg" alt="Timeline">
-
-    <button class="slide-btn" onclick="next()">RSVP</button>
+    <button class="slide-btn" onclick="next()">Next</button>
   </div>
 </section>
 
-<!-- SLIDE 5 — RSVP -->
+<!-- SLIDE 4 — WHERE + Map -->
+<section class="slide">
+  <div class="card details-card">
+    <h2>Where</h2>
+    <a href="YOUR_GOOGLE_MAP_LINK_HERE" target="_blank">
+      <img src="map.jpg" alt="Map location">
+    </a>
+    <button class="slide-btn" onclick="next()">Next</button>
+  </div>
+</section>
+
+<!-- SLIDE 5 — Timeline -->
+<section class="slide">
+  <div class="card details-card">
+    <h2>Timeline</h2>
+    <img src="timeline.jpg" alt="Timeline">
+    <button class="slide-btn" onclick="next()">Next</button>
+  </div>
+</section>
+
+<!-- SLIDE 6 — RSVP -->
 <section class="slide">
   <div class="card details-card">
     <h2>RSVP</h2>
@@ -80,7 +82,7 @@
   </div>
 </section>
 
-<!-- SLIDE 6 — ENDING -->
+<!-- SLIDE 7 — ENDING -->
 <section class="slide">
   <div class="card">
     <img src="photo1.jpg" alt="">
